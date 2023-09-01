@@ -11,6 +11,9 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
   <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Nucamp: A Better Way To Camp</title>
@@ -29,16 +32,47 @@
     </div>
   </header>
 
+  
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggler="collapse" data-bs-target="#nucampNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <main class="container">
-    <div>
-      <div>
+    <div class="row">
+      <div class="col">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">About</li>
+        </ol>
         <h2>About Us</h2>
         <hr />
       </div>
     </div>
 
-    <section class="row row-content align-items-center">
-      <div>
+    <section class="row row-content">
+      <div class="col-sm-6">
         <h3>Our Mission</h3>
         <p>We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web
           Wilderness. We increase access
@@ -50,8 +84,8 @@
       </div>
     </section>
 
-    <section class="row row-content align-items-center">
-      <div>
+    <section class="row row-content">
+      <div class="col-sm-6">
         <h3>Community Partners</h3>
         <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
         <p>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
